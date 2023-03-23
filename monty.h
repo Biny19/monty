@@ -83,9 +83,8 @@ extern data_t data;
 #define MOD_FAIL "L%u: can't mod, stack too short\n"
 #define PCHAR_FAIL "L%u: can't pchar, stack empty\n"
 #define PCHAR_RANGE "L%u: can't pchar, value out of range\n"
-/* main.c */
+/* monty_main.c */
 void monty(args_t *args);
-data_t data = DATA_INIT;
 /* get_func.c */
 void (*get_func(char **parsed))(stack_t **, unsigned int);
 void push_handler(stack_t **stack, unsigned int line_number);
